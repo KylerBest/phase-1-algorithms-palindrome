@@ -1,9 +1,19 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  let result = '';
+  for(let i = word.length-1; i > -1; i--){
+    result += word[i];
+  }
+  return (result == word ? true : false);
 }
 
 /* 
-  Add your pseudocode here
+  take in a word
+  make a 'result' variable and set it to an empty string
+  make a for loop that starts at the end of the word and counts down to 0
+  add each letter to result
+  compare result to the original word
+  if they are the same then return true
 */
 
 /*
